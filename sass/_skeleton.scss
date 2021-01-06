@@ -1,0 +1,414 @@
+body,
+a {
+	color: $theme-black;
+}
+
+h1,
+h2,
+h3,
+#main-nav {
+	font-family: "Alatsi", sans-serif;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 24px;
+
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 30px;
+	}
+}
+
+h2 {
+	font-size: 20px;
+
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 22px;
+	}
+
+	span {
+		font-size: 14px;
+		font-family: "Open Sans", sans-serif;
+	}
+}
+
+h3 {
+	font-size: 24px;
+
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 16px;
+	}
+}
+
+p {
+	font-size: 14px;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+	position: relative;
+}
+
+ul {
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+img {
+	display: block;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+.desktop {
+	display: none;
+
+	@media (min-width: $breakpoint-desktop) {
+		display: block;
+	}
+}
+
+.mobile {
+	display: block;
+
+	@media (min-width: $breakpoint-desktop) {
+		display: none;
+	}
+}
+
+body {
+	background-size: auto;
+	background-position: bottom left;
+	min-height: 100vh;
+	background-attachment: fixed;
+
+	@media (min-width: $breakpoint-tablet) {
+		background-position: top right;
+	}
+
+	&.bio {
+		background-image: url("img/fondo-acuarela-bio.jpg");
+
+		@media (min-width: $breakpoint-tablet) {
+			article {
+				margin-top: 50px;
+
+				figure {
+					max-width: 390px;
+					float: left;
+					margin-top: -50px;
+					padding: 20px 24px;
+					background: rgba(243, 182, 239, 0.62);
+					border: 1px solid #ffffff;
+					margin-right: 15px;
+				}
+			}
+		}
+	}
+
+	&.contacto {
+		background-image: url("img/fondo-acuarela-contacto.jpg");
+
+		section {
+			padding: 25px 15px 20px;
+			font-family: "Alatsi", sans-serif;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			background: rgba(255, 255, 255, 0.26);
+			backdrop-filter: blur(10px);
+
+			a.email {
+				text-align: center;
+				padding-bottom: 8px;
+				border-bottom: solid 2px $theme-white;
+				display: block;
+				width: 320px;
+				margin: 0 auto;
+				max-width: 90%;
+			}
+
+			label {
+				display: block;
+				max-width: 320px;
+				margin: 15px auto;
+			}
+
+			input,
+			textarea {
+				display: block;
+				background: rgba(255, 255, 255, 0.26);
+				border: 2px solid $theme-white;
+				backdrop-filter: blur(4px);
+				width: 100%;
+				margin-top: 6px;
+				line-height: 30px;
+			}
+
+			#submit {
+				display: block;
+				border: 4px solid #ffffff;
+				margin: 0 auto;
+				width: 90px;
+			}
+		}
+	}
+
+	&.libros {
+		background-image: url("img/fondo-acuarela-libros.jpg");
+
+		@media (min-width: $breakpoint-tablet) {
+			font-size: 0;
+
+			article {
+				display: inline-block;
+				width: calc(33% - 50px);
+				margin-right: 75px;
+				margin-bottom: 50px;
+				vertical-align: top;
+
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+
+				img {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+	&.compilaciones {
+		background-image: url("img/fondo-acuarela-compilaciones.jpg");
+
+		@media (min-width: $breakpoint-tablet) {
+			font-size: 0;
+
+			article {
+				display: inline-block;
+				width: calc(33% - 50px);
+				margin-right: 75px;
+				margin-bottom: 50px;
+				vertical-align: top;
+
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+
+				img {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+	&.workshops {
+		background-image: url("img/fondo-acuarela-workshops.jpg");
+
+		@media (min-width: $breakpoint-tablet) {
+			font-size: 0;
+
+			article {
+				display: inline-block;
+				width: calc(50% - 50px);
+				margin-right: 100px;
+				margin-bottom: 50px;
+				vertical-align: top;
+
+				h2 {
+					min-height: 2.3em;
+				}
+
+				&:nth-child(2n) {
+					margin-right: 0;
+				}
+
+				p:first-of-type {
+					min-height: 9em;
+				}
+
+				img {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+
+	&.colaboraciones {
+		background-image: url("img/fondo-acuarela-compilaciones.jpg");
+		section:not(.video-list) {
+			article {
+				backdrop-filter: none;
+			}
+		}
+
+		@media (min-width: $breakpoint-tablet) {
+			section:not(.video-list) {
+				article {
+					overflow: auto;
+
+					> figure,
+					.img-expandable-container {
+						float: left;
+						width: 400px;
+						margin-right: 28px;
+						clear: both;
+					}
+
+					.img-expandable-container {
+						margin-top: 28px;
+					}
+				}
+			}
+
+			section.video-list {
+				font-size: 0;
+
+				article {
+					display: inline-block;
+					width: calc(33% - 17px);
+					margin-right: 25px;
+					margin-bottom: 25px;
+					vertical-align: top;
+
+					&:nth-child(3n) {
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+
+	&.home {
+		background-image: url("img/fondo-acuarela-home.jpg");
+
+		article {
+			max-width: 755px;
+		}
+	}
+
+	main {
+		padding: 15px 20px 50px;
+		overflow: auto;
+
+		section {
+			max-width: 1200px;
+			margin: 0 auto;
+
+			article {
+				backdrop-filter: blur(20px);
+				border: solid 2px $theme-white;
+				margin: 0 auto 15px;
+			}
+		}
+
+		.strong {
+			border: solid 4px $theme-white;
+			border-radius: 2px;
+		}
+	}
+}
+
+@keyframes slide-in {
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes slide-in {
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+@keyframes slide-out {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(100%);
+	}
+}
+
+@-webkit-keyframes slide-out {
+	0% {
+		-webkit-transform: translateX(0%);
+	}
+	100% {
+		-webkit-transform: translateX(100%);
+	}
+}
+
+article {
+	padding: 15px;
+
+	figure {
+		margin: 5px;
+
+		figcaption {
+			text-align: right;
+			font-size: 10px;
+			margin-top: 3px;
+		}
+	}
+
+	a {
+		color: #4a767c;
+		word-break: break-word;
+	}
+}
+
+.img-expandable-container {
+	overflow: auto;
+
+	figure {
+		margin: 0;
+		float: left;
+		width: calc(33% - 10px);
+		margin-right: 15px;
+		margin-bottom: 15px;
+		cursor: pointer;
+
+		@media (min-width: $breakpoint-tablet) {
+			width: calc(20% - 11px);
+			margin-right: 13px;
+		}
+
+		&:nth-child(3n) {
+			margin-right: 0;
+		}
+
+		.img-expanded {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+			max-width: 90%;
+			max-height: 90%;
+			box-shadow: 0 0 2000px 2000px #000000d6;
+			z-index: 3;
+		}
+	}
+
+	p {
+		clear: both;
+		margin: 0;
+		line-height: 1.3;
+		font-size: 10px;
+	}
+}

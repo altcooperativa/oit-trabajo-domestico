@@ -1,0 +1,27 @@
+footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+
+	@media (min-width: $breakpoint-tablet) {
+		text-align: right;
+	}
+
+	.powered-by {
+		display: inline-block;
+		margin: 15px;
+
+		p.powered {
+			margin: 0;
+			font-size: 9px;
+			font-family: "Open Sans", sans-serif;
+		}
+
+		img {
+			display: inline-block;
+			vertical-align: bottom;
+		}
+	}
+}
