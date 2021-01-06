@@ -1,0 +1,786 @@
+/**
+ * Main Styles for site.
+ */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0; }
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+/* latin-ext */
+@font-face {
+  font-family: "Alatsi";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Alatsi Regular"), local("Alatsi-Regular"), url(https://fonts.gstatic.com/s/alatsi/v2/TK3iWkUJAxQ2nLN2Fz8Ghe4.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: "Alatsi";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Alatsi Regular"), local("Alatsi-Regular"), url(https://fonts.gstatic.com/s/alatsi/v2/TK3iWkUJAxQ2nLN2GT8G.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+/* latin-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFW50bbck.woff2) format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url(https://fonts.gstatic.com/s/opensans/v18/mem8YaGs126MiZpBA-UFVZ0b.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  text-align: center; }
+  @media (min-width: 860px) {
+    footer {
+      text-align: right; } }
+  footer .powered-by {
+    display: inline-block;
+    margin: 15px; }
+    footer .powered-by p.powered {
+      margin: 0;
+      font-size: 9px;
+      font-family: "Open Sans", sans-serif; }
+    footer .powered-by img {
+      display: inline-block;
+      vertical-align: bottom; }
+
+body {
+  padding-top: 60px; }
+  @media (min-width: 1040px) {
+    body {
+      padding-top: 85px; } }
+  body header {
+    backdrop-filter: blur(20px);
+    border-bottom: solid 1px #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 15px;
+    z-index: 1; }
+    @supports not (backdrop-filter: blur(20px)) {
+      body header {
+        background-image: url("img/fondo-acuarela-libros.jpg");
+        background-position: bottom; } }
+    body header #main-nav {
+      width: 100%;
+      position: relative;
+      height: 70px;
+      max-width: 1200px;
+      margin: 0 auto; }
+      body header #main-nav ul {
+        list-style-type: none;
+        float: right;
+        margin: 0; }
+        body header #main-nav ul > li {
+          display: inline-block;
+          padding: 25px;
+          vertical-align: top;
+          /*max-height: 70px;
+          overflow: hidden;*/
+          position: relative;
+          cursor: context-menu;
+          font-size: 16px; }
+          body header #main-nav ul > li.language {
+            color: #FFFFFF; }
+          body header #main-nav ul > li a {
+            font-size: 16px; }
+          body header #main-nav ul > li.home {
+            position: absolute;
+            left: 0;
+            padding: 18px 25px; }
+            body header #main-nav ul > li.home a {
+              font-size: 30px;
+              text-transform: uppercase; }
+          body header #main-nav ul > li ul.sub-menu {
+            padding: 8px 0;
+            position: absolute;
+            margin-top: 20px;
+            display: none;
+            background-color: #FAFAFA;
+            max-height: none; }
+            body header #main-nav ul > li ul.sub-menu li {
+              display: block;
+              padding: 6px 12px; }
+          body header #main-nav ul > li:hover ul.sub-menu {
+            display: block; }
+    body header h3 {
+      margin: 0;
+      display: none;
+      line-height: 60px;
+      text-transform: uppercase; }
+  body .hamburger-button {
+    position: absolute;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    width: 36px;
+    padding: 0;
+    top: 22px;
+    right: 27px; }
+  body #hamburger-menu {
+    position: fixed;
+    background-color: #EAEAEA;
+    border: solid 3px #FFFFFF;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    width: 100%;
+    overflow: auto;
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    z-index: 2; }
+    body #hamburger-menu ul {
+      list-style-type: none;
+      margin: 0; }
+      body #hamburger-menu ul li {
+        padding: 0 15px; }
+        body #hamburger-menu ul li:first-child {
+          text-transform: uppercase;
+          margin-bottom: 30px; }
+        body #hamburger-menu ul li:not(:first-child):not(:last-child) {
+          border-bottom: solid 2px #FFFFFF; }
+        body #hamburger-menu ul li a {
+          line-height: 66px;
+          font-size: 24px;
+          font-family: "Alatsi";
+          display: block; }
+  body.hamburger-menu-open {
+    overflow: hidden; }
+    body.hamburger-menu-open #hamburger-menu {
+      animation: slide-in 0.5s forwards;
+      -webkit-animation: slide-in 0.5s forwards; }
+    body.hamburger-menu-open .hamburger-button {
+      top: 17px;
+      width: 34px; }
+  body.hamburger-menu-closed #hamburger-menu {
+    animation: slide-out 0.5s forwards;
+    -webkit-animation: slide-out 0.5s forwards; }
+  body.home header h3.home {
+    display: block; }
+  body.bio li.bio > a {
+    border: solid 1px #fff;
+    padding: 3px 20px; }
+  body.bio header h3.bio {
+    display: block; }
+  body.libros li.publicaciones > span {
+    border: solid 1px #fff;
+    padding: 3px 20px; }
+  body.libros header h3.libros {
+    display: block; }
+  body.compilaciones li.publicaciones > span {
+    border: solid 1px #fff;
+    padding: 3px 20px; }
+  body.compilaciones header h3.compilaciones {
+    display: block; }
+  body.workshops li.workshops > a {
+    border: solid 1px #fff;
+    padding: 3px 20px; }
+  body.workshops header h3.workshops {
+    display: block; }
+  body.colaboraciones li.colaboraciones > a {
+    border: solid 1px #fff;
+    padding: 3px 20px; }
+  body.colaboraciones header h3.colaboraciones {
+    display: block; }
+  body.contacto li.contacto > a {
+    border: solid 1px #fff;
+    padding: 3px 20px; }
+  body.contacto header h3.contacto {
+    display: block; }
+
+body,
+a {
+  color: #252525; }
+
+h1,
+h2,
+h3,
+#main-nav {
+  font-family: "Alatsi", sans-serif;
+  font-weight: 400; }
+
+h1 {
+  font-size: 24px; }
+  @media (min-width: 860px) {
+    h1 {
+      font-size: 30px; } }
+
+h2 {
+  font-size: 20px; }
+  @media (min-width: 860px) {
+    h2 {
+      font-size: 22px; } }
+  h2 span {
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif; }
+
+h3 {
+  font-size: 24px; }
+  @media (min-width: 860px) {
+    h3 {
+      font-size: 16px; } }
+
+p {
+  font-size: 14px; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  position: relative; }
+
+ul {
+  padding: 0; }
+
+a {
+  text-decoration: none; }
+
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+  max-height: 100%; }
+
+img {
+  display: block; }
+
+iframe {
+  display: block;
+  margin: 0 auto; }
+
+.desktop {
+  display: none; }
+  @media (min-width: 1040px) {
+    .desktop {
+      display: block; } }
+
+.mobile {
+  display: block; }
+  @media (min-width: 1040px) {
+    .mobile {
+      display: none; } }
+
+body {
+  background-size: auto;
+  background-position: bottom left;
+  min-height: 100vh;
+  background-attachment: fixed; }
+  @media (min-width: 860px) {
+    body {
+      background-position: top right; } }
+  body.bio {
+    background-image: url("img/fondo-acuarela-bio.jpg"); }
+    @media (min-width: 860px) {
+      body.bio article {
+        margin-top: 50px; }
+        body.bio article figure {
+          max-width: 390px;
+          float: left;
+          margin-top: -50px;
+          padding: 20px 24px;
+          background: rgba(243, 182, 239, 0.62);
+          border: 1px solid #ffffff;
+          margin-right: 15px; } }
+  body.contacto {
+    background-image: url("img/fondo-acuarela-contacto.jpg"); }
+    body.contacto section {
+      padding: 25px 15px 20px;
+      font-family: "Alatsi", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 20px;
+      background: rgba(255, 255, 255, 0.26);
+      backdrop-filter: blur(10px); }
+      body.contacto section a.email {
+        text-align: center;
+        padding-bottom: 8px;
+        border-bottom: solid 2px #FFFFFF;
+        display: block;
+        width: 320px;
+        margin: 0 auto;
+        max-width: 90%; }
+      body.contacto section label {
+        display: block;
+        max-width: 320px;
+        margin: 15px auto; }
+      body.contacto section input,
+      body.contacto section textarea {
+        display: block;
+        background: rgba(255, 255, 255, 0.26);
+        border: 2px solid #FFFFFF;
+        backdrop-filter: blur(4px);
+        width: 100%;
+        margin-top: 6px;
+        line-height: 30px; }
+      body.contacto section #submit {
+        display: block;
+        border: 4px solid #ffffff;
+        margin: 0 auto;
+        width: 90px; }
+  body.libros {
+    background-image: url("img/fondo-acuarela-libros.jpg"); }
+    @media (min-width: 860px) {
+      body.libros {
+        font-size: 0; }
+        body.libros article {
+          display: inline-block;
+          width: calc(33% - 50px);
+          margin-right: 75px;
+          margin-bottom: 50px;
+          vertical-align: top; }
+          body.libros article:nth-child(3n) {
+            margin-right: 0; }
+          body.libros article img {
+            margin: 0 auto; } }
+  body.compilaciones {
+    background-image: url("img/fondo-acuarela-compilaciones.jpg"); }
+    @media (min-width: 860px) {
+      body.compilaciones {
+        font-size: 0; }
+        body.compilaciones article {
+          display: inline-block;
+          width: calc(33% - 50px);
+          margin-right: 75px;
+          margin-bottom: 50px;
+          vertical-align: top; }
+          body.compilaciones article:nth-child(3n) {
+            margin-right: 0; }
+          body.compilaciones article img {
+            margin: 0 auto; } }
+  body.workshops {
+    background-image: url("img/fondo-acuarela-workshops.jpg"); }
+    @media (min-width: 860px) {
+      body.workshops {
+        font-size: 0; }
+        body.workshops article {
+          display: inline-block;
+          width: calc(50% - 50px);
+          margin-right: 100px;
+          margin-bottom: 50px;
+          vertical-align: top; }
+          body.workshops article h2 {
+            min-height: 2.3em; }
+          body.workshops article:nth-child(2n) {
+            margin-right: 0; }
+          body.workshops article p:first-of-type {
+            min-height: 9em; }
+          body.workshops article img {
+            margin: 0 auto; } }
+  body.colaboraciones {
+    background-image: url("img/fondo-acuarela-compilaciones.jpg"); }
+    body.colaboraciones section:not(.video-list) article {
+      backdrop-filter: none; }
+    @media (min-width: 860px) {
+      body.colaboraciones section:not(.video-list) article {
+        overflow: auto; }
+        body.colaboraciones section:not(.video-list) article > figure,
+        body.colaboraciones section:not(.video-list) article .img-expandable-container {
+          float: left;
+          width: 400px;
+          margin-right: 28px;
+          clear: both; }
+        body.colaboraciones section:not(.video-list) article .img-expandable-container {
+          margin-top: 28px; }
+      body.colaboraciones section.video-list {
+        font-size: 0; }
+        body.colaboraciones section.video-list article {
+          display: inline-block;
+          width: calc(33% - 17px);
+          margin-right: 25px;
+          margin-bottom: 25px;
+          vertical-align: top; }
+          body.colaboraciones section.video-list article:nth-child(3n) {
+            margin-right: 0; } }
+  body.home {
+    background-image: url("img/fondo-acuarela-home.jpg"); }
+    body.home article {
+      max-width: 755px; }
+  body main {
+    padding: 15px 20px 50px;
+    overflow: auto; }
+    body main section {
+      max-width: 1200px;
+      margin: 0 auto; }
+      body main section article {
+        backdrop-filter: blur(20px);
+        border: solid 2px #FFFFFF;
+        margin: 0 auto 15px; }
+    body main .strong {
+      border: solid 4px #FFFFFF;
+      border-radius: 2px; }
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%); } }
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%); } }
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(100%); } }
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0%); }
+  100% {
+    -webkit-transform: translateX(100%); } }
+article {
+  padding: 15px; }
+  article figure {
+    margin: 5px; }
+    article figure figcaption {
+      text-align: right;
+      font-size: 10px;
+      margin-top: 3px; }
+  article a {
+    color: #4a767c;
+    word-break: break-word; }
+
+.img-expandable-container {
+  overflow: auto; }
+  .img-expandable-container figure {
+    margin: 0;
+    float: left;
+    width: calc(33% - 10px);
+    margin-right: 15px;
+    margin-bottom: 15px;
+    cursor: pointer; }
+    @media (min-width: 860px) {
+      .img-expandable-container figure {
+        width: calc(20% - 11px);
+        margin-right: 13px; } }
+    .img-expandable-container figure:nth-child(3n) {
+      margin-right: 0; }
+    .img-expandable-container figure .img-expanded {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      max-width: 90%;
+      max-height: 90%;
+      box-shadow: 0 0 2000px 2000px #000000d6;
+      z-index: 3; }
+  .img-expandable-container p {
+    clear: both;
+    margin: 0;
+    line-height: 1.3;
+    font-size: 10px; }
+
+/*# sourceMappingURL=main.css.map */
