@@ -4,24 +4,32 @@ footer {
 	bottom: 0;
 	left: 0;
 	text-align: center;
+	height: 60px;
+	background-color: $theme-blue;
 
 	@media (min-width: $breakpoint-tablet) {
 		text-align: right;
 	}
 
-	.powered-by {
-		display: inline-block;
-		margin: 15px;
-
-		p.powered {
-			margin: 0;
-			font-size: 9px;
-			font-family: "Open Sans", sans-serif;
+	a {
+		&.go-up {
+			color: #FFF;
+			font-size: 12px;
+			font-weight: 700;
+			line-height: 16px;
+			letter-spacing: 0.05em;
+			text-align: center;
+			background-color: $theme-grey;
+			padding: 5px 26px;
+			float: left;
+			margin: 17px 15px;
 		}
+	}
 
+	.powered-by {
 		img {
-			display: inline-block;
-			vertical-align: bottom;
+			float: right;
+			margin: 32px 15px 9px;
 		}
 	}
 }

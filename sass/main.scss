@@ -7,17 +7,19 @@
 $breakpoint-tablet: 860px;
 $breakpoint-desktop: 1040px;
 
-$theme-black: #252525;
-$theme-white: #FFFFFF;
-$theme-pink: #F3B6EF;
-$theme-grey: #EAEAEA;
-$theme-grey-2: #FAFAFA;
+$theme-blue: #1E2DBE;
+$theme-blue-2: #3F4BBF;
+$theme-red: #FA3C4B;
+$theme-red-2: #E66D76;
+$theme-pink: #D15FB8;
+$theme-pink-2: #CC83BC;
+$theme-grey: #505050;
+
 $img-directory: "img";
 
-@import 'normalize';
-@import 'fonts';
-
-@import 'footer';
-@import 'header';
-@import 'skeleton';
-
+@import '_normalize';
+@import '_fonts';
+@import '_footer';
+@import '_header';
+@import '_style';
+@import '_skeleton';

@@ -1,54 +1,62 @@
 body {
 	padding-top: 60px;
 
-	@media (min-width: $breakpoint-desktop) {
-		padding-top: 85px;
-	}
-
 	header {
-		backdrop-filter: blur(20px);
-
-		@supports not (backdrop-filter: blur(20px)) {
-			background-image: url("img/fondo-acuarela-libros.jpg");
-			background-position: bottom;
-		}
-
-		border-bottom: solid 1px $theme-white;
+		background-color: $theme-blue;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 100%;
 		padding: 0 15px;
 		z-index: 1;
+		height: 60px;
+		color: #FFF;
+
+		.oit-logo {
+			display: inline-block;
+			float: left;
+			margin: 15px 0;
+			margin-right: 11px;
+			width: 87px;
+		}
+
+		h1 {
+			font-family: Noto Sans;
+			font-size: 12px;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 16px;
+			letter-spacing: 0em;
+			text-align: center;
+			margin-bottom: 0;
+			width: 120px;
+			margin: 15px 9px 9px 30px;
+			display: inline-block;
+		}
 
 		#main-nav {
-			width: 100%;
-			position: relative;
-			height: 70px;
-			max-width: 1200px;
-			margin: 0 auto;
+			height: 60px;
+			margin-left: 334px;
 
 			ul {
 				list-style-type: none;
-				float: right;
 				margin: 0;
+
+				.trabajo-y-seguridad {
+					padding-left: 0;
+				}
 
 				> li {
 					display: inline-block;
 					padding: 25px;
 					vertical-align: top;
-					/*max-height: 70px;
-					overflow: hidden;*/
 					position: relative;
 					cursor: context-menu;
 					font-size: 16px;
 
-					&.language {
-						color: $theme-white;
-					}
-
 					a {
 						font-size: 16px;
+						color: #FFF;
 					}
 
 					&.home {
@@ -61,35 +69,8 @@ body {
 							text-transform: uppercase;
 						}
 					}
-
-					ul.sub-menu {
-						padding: 8px 0;
-						position: absolute;
-						margin-top: 20px;
-						display: none;
-						background-color: $theme-grey-2;
-						max-height: none;
-
-						li {
-							display: block;
-							padding: 6px 12px;
-						}
-					}
-
-					&:hover {
-						ul.sub-menu {
-							display: block;
-						}
-					}
 				}
 			}
-		}
-
-		h3 {
-			margin: 0;
-			display: none;
-			line-height: 60px;
-			text-transform: uppercase;
 		}
 	}
 
@@ -101,14 +82,15 @@ body {
 		outline: 0;
 		width: 36px;
 		padding: 0;
-		top: 22px;
-		right: 27px;
+		top: 19px;
+		right: 26px;
+
 	}
 
 	#hamburger-menu {
 		position: fixed;
 		background-color: $theme-grey;
-		border: solid 3px $theme-white;
+		border: solid 3px #FFFFFF;
 		left: 0;
 		top: 0;
 		min-height: 100%;
@@ -131,13 +113,13 @@ body {
 				}
 
 				&:not(:first-child):not(:last-child) {
-					border-bottom: solid 2px $theme-white;
+					border-bottom: solid 2px #FFFFFF;
 				}
 
 				a {
 					line-height: 66px;
 					font-size: 24px;
-					font-family: "Alatsi";
+					font-family: Noto Sans;
 					display: block;
 				}
 			}
@@ -164,89 +146,26 @@ body {
 			-webkit-animation: slide-out 0.5s forwards;
 		}
 	}
+	@media (min-width: $breakpoint-desktop) {
+		padding-top: 109px;
 
-	&.home {
 		header {
-			h3.home {
-				display: block;
+			height: 109px;
+
+			.oit-logo {
+				margin: 18px 81px;
+				margin-right: 134px;
+				width: 203px;
 			}
-		}
-	}
 
-	&.bio {
-		li.bio > a {
-			border: solid 1px #fff;
-			padding: 3px 20px;
-		}
-
-		header {
-			h3.bio {
-				display: block;
-			}
-		}
-	}
-
-	&.libros {
-		li.publicaciones > span {
-			border: solid 1px #fff;
-			padding: 3px 20px;
-		}
-
-		header {
-			h3.libros {
-				display: block;
-			}
-		}
-	}
-
-	&.compilaciones {
-		li.publicaciones > span {
-			border: solid 1px #fff;
-			padding: 3px 20px;
-		}
-
-		header {
-			h3.compilaciones {
-				display: block;
-			}
-		}
-	}
-
-	&.workshops {
-		li.workshops > a {
-			border: solid 1px #fff;
-			padding: 3px 20px;
-		}
-
-		header {
-			h3.workshops {
-				display: block;
-			}
-		}
-	}
-
-	&.colaboraciones {
-		li.colaboraciones > a {
-			border: solid 1px #fff;
-			padding: 3px 20px;
-		}
-
-		header {
-			h3.colaboraciones {
-				display: block;
-			}
-		}
-	}
-
-	&.contacto {
-		li.contacto > a {
-			border: solid 1px #fff;
-			padding: 3px 20px;
-		}
-
-		header {
-			h3.contacto {
-				display: block;
+			h1 {
+				margin: 0;
+				margin-top: 14px;
+				font-size: 24px;
+				line-height: 33px;
+				text-align: left;
+				margin-bottom: 0;
+				width: auto;
 			}
 		}
 	}

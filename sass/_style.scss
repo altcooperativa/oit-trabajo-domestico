@@ -1,0 +1,365 @@
+body {
+	* {
+		font-family: Noto Sans;
+		font-style: normal;
+	}
+
+	title {
+		display:block;
+	}
+
+	main {
+		max-width: 974px;
+		margin: 0 auto;
+
+		section {
+			.logo {
+				margin: 17px auto;
+				width: 276px;
+			}
+
+			p {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 19px;
+				text-align: center;
+				margin: 15px 0px 25px 0px;
+				padding: 16px;
+
+				&.center {
+					text-align: center;
+				}
+
+				&.first {
+					margin: 10px 17px 43px 17px;
+				}
+			}
+			div {
+				p {
+					text-align: left;
+				}
+			}
+			.videos {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 27px;
+
+				img {
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 22px;
+					margin-left: 11px;
+				}
+			}
+
+			iframe {
+				margin-bottom: 80px;
+			}
+
+			&.selection {
+				text-align: center;
+
+				span {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 27px;
+					text-align: center;
+				}
+
+				div {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 27px;
+					text-align: center;
+					margin: 0 auto;
+
+					img {
+						display: inline-block;
+						vertical-align: middle;
+						float: left;
+						margin-top: -4px;
+					}
+
+					&.title {
+						border: solid 2px;
+						padding: 15px 15px 15px 0;
+						border-bottom: 20px solid;
+						box-sizing: content-box;
+						width: 275px;
+						height: 30px;
+						vertical-align: middle;
+
+						&.red {
+							border-color: $theme-red;
+						}
+
+						&.blue {
+							border-color: $theme-blue;
+						}
+
+						&.pink {
+							border-color: $theme-pink;
+						}
+
+						a {
+							display: inline-block;
+							vertical-align: middle;
+							margin-bottom: 10px;
+						}
+					}
+				}
+
+				p {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 27px;
+					text-align: center;
+					width: 260px;
+					margin: 25px auto;
+					margin-bottom: 80px;
+				}
+
+				article {
+					div {
+						img {
+							margin-top: -4px;
+							padding: 0;
+						}
+					}
+					img {
+						margin: 0 auto;
+						padding: 10px;
+
+						&.first {
+							height: 144px;
+						}
+					}
+					p {
+						color: $theme-grey;
+						padding: 0;
+					}
+				}
+
+
+				.tri-grey {
+					padding: 15px;
+					margin: 0 auto;
+				}
+			}
+
+			h1 {
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 33px;
+				text-align: center;
+				border: 3px solid;
+				border-bottom: 10px solid;
+				padding: 15px;
+			}
+			h2 {
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 25px;
+				text-align: center;
+				border: solid 3px;
+				border-top: solid 10px;
+				border-bottom: solid 10px;
+				padding: 10px;
+				margin: 108px 0 71px 0;
+
+				a {
+					text-decoration: underline;
+				}
+			}
+
+			article {
+				border: none;
+				margin: 20px auto 20px;
+				color: #FFF;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 19px;
+				text-align: center;
+				padding: 15px 0;
+
+				title {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 27px;
+					text-align: center;
+				}
+
+				img {
+					margin: 0 auto;
+				}
+			}
+
+			#trabajo-y-seguridad {
+				margin-top: 147px;
+
+				article {
+					background-color: $theme-red;
+					padding-bottom: 0;
+
+					div {
+						background-color: $theme-red-2;
+						border: solid 2px #FFF;
+						padding: 15px;
+
+						div {
+							border: none;
+							width: 45%;
+							display: inline-block;
+						}
+					}
+
+					p {
+						&.points {
+							width: 60%;
+							float: left;
+							text-align: left;
+						}
+					}
+				}
+			}
+
+			#remuneracion {
+				margin-top: 40px;
+
+				article {
+					background-color: $theme-blue;
+					margin: 0 auto 15px;
+					padding: 0 0 15px 0;
+
+					title {
+						background-color: $theme-blue-2;
+						padding: 19px;
+					}
+					div {
+						img {
+								display: inline-block;
+								vertical-align: middle;
+						}
+						p {
+							display: inline-block;
+							width: 45%;
+							text-align: left;
+							padding: 0;
+							margin-left: 28px;
+						}
+					}
+				}
+			}
+
+			#derechos-laborales {
+				margin-top: 40px;
+
+				article {
+					background-color: $theme-pink;
+
+					p {
+						background-color: $theme-pink-2;
+						padding: 30px;
+						    margin: 15px 0px 15px 0px;
+					}
+				}
+			}
+
+			#institucional {
+				title {
+					font-size: 19px;
+					font-weight: 700;
+					line-height: 25px;
+					text-align: center;
+				}
+
+				img {
+					margin: 27px auto 141px;
+				}
+			}
+
+		}
+
+		@media (min-width: $breakpoint-tablet) {
+
+
+
+		}
+
+
+		@media (min-width: $breakpoint-desktop) {
+			section {
+				div {
+					display: inline-block;
+					vertical-align: top;
+					width: calc(100% - 487px);
+
+					p {
+						font-size: 18px;
+						line-height: 25px;
+						text-align: left;
+					}
+				}
+
+				.videos {
+					font-size: 32px;
+				}
+
+				iframe{
+					vertical-align: middle;
+					display: inline-block;
+					width: 477px;
+				}
+
+				&.selection {
+					article {
+						margin: 0px 10px 0px 10px;
+						width: 30%;
+						display: inline-block;
+
+						div {
+							img{
+								margin-top: -4px;
+								padding: 0;
+							}
+							&.title {
+								width: 260px;
+							}
+						}
+					}
+				}
+				article {
+					title {
+						font-size: 32px;
+					}
+				}
+				p {
+					font-size: 16px;
+				}
+				#institucional {
+					title {
+						font-size: 24px;
+					}
+				}
+				h1 {
+					font-size: 32px;
+				}
+				h2 {
+					font-size: 24px;
+					line-height: 33px;
+					margin-top: 221px;
+					margin-bottom: 146px;
+				}
+				.logo {
+					width: 518px;
+				}
+				p.first {
+					font-size: 24px;
+					line-height: 33px;
+				}
+			}
+		}
+	}
+}
