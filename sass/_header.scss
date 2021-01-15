@@ -7,6 +7,11 @@ body {
 	.icon-hamburger-close {
 		display: none;
 	}
+	header {
+		#main-nav {
+			display: none;
+		}
+	}
 
 	&.hamburger-menu-active {
 		overflow: hidden;
@@ -19,6 +24,7 @@ body {
 		}
 		header {
 			#main-nav {
+				display: revert;
 				width: 100%;
 				height: 100%;
 				position: fixed;
@@ -152,6 +158,9 @@ header {
 			margin-bottom: 0;
 			width: auto;
 		}
+			#main-nav {
+				display: revert;
+			}
 	}
 }
 }
