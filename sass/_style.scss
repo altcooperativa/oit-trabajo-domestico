@@ -1,4 +1,29 @@
 body {
+	div {
+		&.go-up {
+			position: fixed;
+			bottom: 17px;
+			height: 27px;
+			left: 15px;
+			width: 122px;
+
+			a {
+				display: block;
+				height: 27px;
+				width: 122px;
+				cursor: pointer;
+
+				img {
+					position: fixed;
+					bottom: 17px;
+					left: 15px;
+					width: 122px;
+				}
+			}
+		}
+	}
+
+
 	* {
 		font-family: Noto Sans;
 		font-style: normal;
@@ -415,7 +440,7 @@ body {
 							height: 170px;
 							float: left;
 							font-size: 24px;
-					    padding: 70px 0;
+							padding: 70px 0;
 						}
 
 						p {
@@ -451,7 +476,7 @@ body {
 							height: 250px;
 
 							title {
-								    padding: 26px;
+								padding: 26px;
 							}
 
 							p {
