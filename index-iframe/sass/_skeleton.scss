@@ -1,0 +1,120 @@
+body,
+a {
+	color: $theme-grey;
+}
+
+h1,
+h2,
+h3,
+#main-nav {
+	font-family: Noto Sans;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 24px;
+
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 30px;
+	}
+}
+
+h2 {
+	font-size: 20px;
+
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 22px;
+	}
+
+	span {
+		font-size: 14px;
+		font-family: Noto Sans;
+	}
+}
+
+h3 {
+	font-size: 24px;
+
+	@media (min-width: $breakpoint-tablet) {
+		font-size: 16px;
+	}
+}
+
+p {
+	font-size: 14px;
+}
+
+body {
+	font-family: Noto Sans;
+	font-size: 14px;
+	position: relative;
+}
+
+ul {
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+
+img {
+	display: block;
+}
+
+iframe {
+	display: block;
+	margin: 0 auto;
+}
+
+.desktop {
+	display: none;
+
+	@media (min-width: $breakpoint-desktop) {
+		display: block;
+	}
+}
+
+.mobile {
+	display: block;
+
+	@media (min-width: $breakpoint-desktop) {
+		display: none;
+	}
+}
+
+body {
+	min-height: 100vh;
+
+	main {
+		padding: 17px 20px;
+		overflow: auto;
+
+		section {
+			max-width: 1200px;
+			margin: 0 auto;
+
+			article {
+				margin: 0 auto 15px;
+			}
+		}
+
+		.strong {
+			border: solid 4px #FFFFFF;
+			border-radius: 2px;
+		}
+	}
+}
+
+article {
+	padding: 15px;
+
+	a {
+		word-break: break-word;
+	}
+}

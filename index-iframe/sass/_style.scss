@@ -1,0 +1,543 @@
+body {
+	padding-top: 60px;
+
+	div {
+		&.go-up {
+			position: fixed;
+			bottom: 17px;
+			height: 27px;
+			left: 15px;
+			width: 122px;
+
+			a {
+				display: block;
+				height: 27px;
+				width: 122px;
+				cursor: pointer;
+
+				img {
+					position: fixed;
+					bottom: 17px;
+					left: 15px;
+					width: 122px;
+				}
+			}
+		}
+	}
+
+
+	* {
+		font-family: Noto Sans;
+		font-style: normal;
+	}
+
+	title {
+		display:block;
+	}
+
+	main {
+		max-width: 974px;
+		margin: 0 auto;
+
+		section {
+			.logo {
+				margin: 17px auto;
+				width: 276px;
+			}
+
+			p {
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 19px;
+				text-align: center;
+				margin: 15px 0px 25px 0px;
+				padding: 16px;
+
+				&.center {
+					text-align: center;
+				}
+
+				&.first {
+					margin: 10px 17px 43px 17px;
+				}
+			}
+			div {
+				p {
+					text-align: left;
+				}
+			}
+			.videos {
+				display: inline-block;
+				vertical-align: middle;
+				font-size: 20px;
+				font-weight: 700;
+				line-height: 27px;
+
+				img {
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 22px;
+					margin-left: 11px;
+				}
+			}
+
+			iframe {
+				margin-bottom: 80px;
+			}
+
+			&.selection {
+				text-align: center;
+
+				span {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 27px;
+					text-align: center;
+				}
+
+				div {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 27px;
+					text-align: center;
+					margin: 0 auto;
+
+					img {
+						display: inline-block;
+						vertical-align: middle;
+						float: left;
+						margin-top: -4px;
+					}
+
+					&.title {
+						border: solid 2px;
+						padding: 15px 15px 15px 0;
+						border-bottom: 20px solid;
+						box-sizing: content-box;
+						width: 275px;
+						height: 30px;
+						vertical-align: middle;
+
+						&.red {
+							border-color: $theme-red;
+						}
+
+						&.blue {
+							border-color: $theme-blue;
+						}
+
+						&.pink {
+							border-color: $theme-pink;
+						}
+
+						a {
+							display: inline-block;
+							vertical-align: middle;
+							margin-bottom: 10px;
+						}
+					}
+				}
+
+				p {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 27px;
+					text-align: center;
+					width: 260px;
+					margin: 25px auto;
+					margin-bottom: 80px;
+				}
+
+				article {
+					div {
+						img {
+							margin-top: -4px;
+							padding: 0;
+						}
+					}
+					img {
+						margin: 0 auto;
+						padding: 10px;
+
+						&.first {
+							height: 144px;
+						}
+					}
+					p {
+						color: $theme-grey;
+						padding: 0;
+					}
+				}
+
+
+				.tri-grey {
+					padding: 15px;
+					margin: 0 auto;
+				}
+			}
+
+			h1 {
+				font-size: 24px;
+				font-weight: 700;
+				line-height: 33px;
+				text-align: center;
+				border: 3px solid;
+				border-bottom: 10px solid;
+				padding: 15px;
+			}
+			h2 {
+				font-size: 18px;
+				font-weight: 700;
+				line-height: 25px;
+				text-align: center;
+				border: solid 3px;
+				border-top: solid 10px;
+				border-bottom: solid 10px;
+				padding: 10px;
+				margin: 108px 0 71px 0;
+
+				a {
+					text-decoration: underline;
+				}
+			}
+
+			article {
+				border: none;
+				margin: 20px auto 20px;
+				color: #FFF;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 19px;
+				text-align: center;
+				padding: 15px 0;
+
+				title {
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 27px;
+					text-align: center;
+				}
+
+				img {
+					margin: 0 auto;
+				}
+			}
+
+			#trabajo-y-seguridad {
+				margin-top: 147px;
+
+				article {
+					background-color: $theme-red;
+					padding-bottom: 0;
+
+					div {
+						background-color: $theme-red-2;
+						border: solid 2px #FFF;
+						padding: 15px;
+
+						&.first {
+							background-color: transparent;
+							border: none;
+							padding: 0;
+						}
+
+						div {
+							border: none;
+							width: 45%;
+							display: inline-block;
+						}
+					}
+
+					p {
+						&.points {
+							width: 60%;
+							float: left;
+							text-align: left;
+						}
+					}
+				}
+			}
+
+			#remuneracion {
+				margin-top: 40px;
+
+				article {
+					background-color: $theme-blue;
+					margin: 0 auto 15px;
+					padding: 0 0 15px 0;
+
+					title {
+						background-color: $theme-blue-2;
+						padding: 19px;
+					}
+					div {
+						img {
+							display: inline-block;
+							vertical-align: middle;
+						}
+						p {
+							display: inline-block;
+							width: 45%;
+							text-align: left;
+							padding: 0;
+							margin-left: 28px;
+						}
+					}
+				}
+			}
+
+			#derechos-laborales {
+				margin-top: 40px;
+
+				article {
+					background-color: $theme-pink;
+
+					p {
+						background-color: $theme-pink-2;
+						padding: 30px;
+						margin: 15px 0px 15px 0px;
+					}
+				}
+			}
+
+			#institucional {
+				title {
+					font-size: 19px;
+					font-weight: 700;
+					line-height: 25px;
+					text-align: center;
+				}
+
+				img {
+					margin: 27px auto 141px;
+				}
+			}
+
+		}
+
+		@media (min-width: $breakpoint-tablet) {
+
+
+
+		}
+
+
+		@media (min-width: $breakpoint-desktop) {
+			body {
+				padding-top: 109px;
+			}
+			section {
+				div {
+					display: inline-block;
+					vertical-align: top;
+					width: calc(100% - 487px);
+
+					p {
+						font-size: 18px;
+						line-height: 25px;
+						text-align: left;
+					}
+				}
+
+				.videos {
+					font-size: 32px;
+				}
+
+				iframe{
+					vertical-align: middle;
+					display: inline-block;
+					width: 477px;
+					margin-bottom: 35px;
+				}
+
+				&.selection {
+					margin-top: 80px;
+
+					article {
+						margin: 0px 10px 0px 10px;
+						width: 30%;
+						display: inline-block;
+
+						div {
+							img{
+								margin-top: -4px;
+								padding: 0;
+							}
+							&.title {
+								width: 260px;
+							}
+						}
+					}
+				}
+				article {
+					title {
+						font-size: 32px;
+					}
+				}
+				p {
+					font-size: 16px;
+				}
+				#trabajo-y-seguridad {
+					margin-top: 151px;
+
+					article {
+						height: 290px;
+						padding-top: 0;
+						border: 2px solid #767676;
+
+						div {
+							margin: 0;
+							height: 286px;
+							display: block;
+							width: 30%;
+							float: right;
+							border: none;
+							border-left: 2px solid;
+
+							&.first {
+								width: 70%;
+								float: left;
+
+								p {
+									width: 79%;
+									margin: 0;
+								}
+
+								img {
+									height: 191px;
+									margin: 0 auto;
+									margin-top: -77px;
+
+									&:last-child {
+										margin: -77px 0 0 0;
+									}
+								}
+							}
+
+							img:last-child {
+								margin: 57px auto;
+							}
+							div {
+								height: auto;
+								width: 50%;
+								float: left;
+								margin: 60px 0;
+
+								img {
+									height: 77px;
+								}
+							}
+
+							title {
+								text-align: left;
+								margin: 20px;
+							}
+						}
+					}
+				}
+
+				#remuneracion {
+					article {
+						height: 170px;
+
+						title {
+							width: 311px;
+							height: 170px;
+							float: left;
+							font-size: 24px;
+							padding: 70px 0;
+						}
+
+						p {
+							display: inline-block;
+							width: 312px;
+							height: 170px;
+							text-align: left;
+							margin: 0;
+						}
+
+						div {
+							display: inline-block;
+							vertical-align: middle;
+							width: 32%;
+							padding: 30px 0px;
+							height: 170px;
+							float: right;
+						}
+					}
+				}
+
+				#derechos-laborales {
+					article {
+						height: 250px;
+						padding: 0;
+
+						div {
+							&:first-child {
+								width: 60%;
+							}
+
+							width: 35%;
+							height: 250px;
+
+							title {
+								padding: 26px;
+							}
+
+							p {
+								margin: 15px 0;
+								font-size: 16px;
+
+								&:last-child {
+									margin: 0;
+								}
+							}
+
+							img {
+								padding: 32px 0;
+							}
+						}
+					}
+
+
+
+
+				}
+
+				#institucional {
+					title {
+						text-align: center;
+						margin: 20px;
+					}
+				}
+				h1 {
+					font-size: 32px;
+				}
+				h2 {
+					font-size: 24px;
+					line-height: 33px;
+					margin-top: 221px;
+					margin-bottom: 146px;
+				}
+				.logo {
+					width: 518px;
+				}
+				p.first {
+					width: 644px;
+					margin: 0 auto 76px;
+					font-size: 24px;
+					line-height: 33px;
+				}
+			}
+		}
+		.powered-by {
+		background-color: $theme-grey;
+    display: block;
+    float: right;
+
+		img {
+			padding: 10px;
+		}
+	}
+	}
+}
