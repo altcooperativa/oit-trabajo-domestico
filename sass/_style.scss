@@ -313,12 +313,6 @@ body {
 
 		}
 
-		@media (min-width: $breakpoint-tablet) {
-
-
-
-		}
-
 
 		@media (min-width: $breakpoint-desktop) {
 			section {
@@ -329,7 +323,7 @@ body {
 
 					p {
 						font-size: 16px;
-						line-height: 25px;
+						line-height: 23px;
 						text-align: left;
 					}
 				}
@@ -390,11 +384,11 @@ body {
 							border-left: 2px solid;
 
 							&.first {
-								width: 76%;
+								width: 70%;
 								float: left;
 
 								p {
-									width: 79%;
+									width: 76%;
 									margin: 0;
 								}
 
@@ -404,7 +398,7 @@ body {
 									margin-top: -77px;
 
 									&:last-child {
-										margin: -93px 0 0 0;
+										margin: -87px 0 0 0;
 									}
 								}
 							}
