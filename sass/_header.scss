@@ -160,6 +160,12 @@ header {
 		}
 			#main-nav {
 				display: revert;
+
+				ul {
+					> li {
+						padding: 19px 9px;
+					}
+				}
 			}
 	}
 }
