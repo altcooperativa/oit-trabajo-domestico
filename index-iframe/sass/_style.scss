@@ -616,6 +616,20 @@ body {
 					margin-top: 151px;
 
 					article {
+						div {
+							&.modal {
+								padding: 38px;
+								.modal-content {
+									height: 91%;
+									.modal-header{
+										margin-bottom: 35px;
+									}
+								}
+							}
+						}
+					}
+
+					article {
 						height: 290px;
 						padding-top: 0;
 						border: 2px solid #767676;
@@ -679,6 +693,20 @@ body {
 
 				#remuneracion {
 					article {
+						div {
+							&.modal {
+								padding: 38px;
+								.modal-content {
+									height: 91%;
+									.modal-header{
+										margin-bottom: 35px;
+									}
+								}
+							}
+						}
+					}
+
+					article {
 						height: 170px;
 
 						title {
@@ -716,9 +744,24 @@ body {
 				}
 
 				#derechos-laborales {
+					article {
+						div {
+							&.modal {
+								padding: 38px;
+								.modal-content {
+									height: 91%;
+									.modal-header{
+										margin-bottom: 35px;
+									}
+								}
+							}
+						}
+					}
+
 					.myBtn_multi {
 						margin: 0;
 					}
+
 					article {
 						height: 250px;
 						padding: 0;
