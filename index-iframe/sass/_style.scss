@@ -787,5 +787,14 @@ body {
 				}
 			}
 		}
+		.powered-by {
+			background-color: $theme-grey;
+			display: block;
+			float: right;
+
+			img {
+				padding: 10px;
+			}
+		}
 	}
 }
