@@ -47,8 +47,8 @@ body {
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 19px;
-				text-align: center;
-				margin: 15px 0px 25px 0px;
+				text-align: left;
+				margin: 10px 0;
 				padding: 16px;
 
 				&.center {
@@ -59,23 +59,31 @@ body {
 					margin: 10px 17px 43px 17px;
 				}
 			}
+
 			div {
 				p {
 					text-align: left;
 				}
 			}
-			.videos {
-				display: inline-block;
-				vertical-align: middle;
-				font-size: 20px;
-				font-weight: 700;
-				line-height: 27px;
 
-				img {
-					display: inline-block;
-					vertical-align: middle;
-					margin-right: 22px;
-					margin-left: 11px;
+			div {
+				&.videos {
+					padding: 20px;
+
+					span {
+						display: inline-block;
+						vertical-align: middle;
+						font-size: 20px;
+						font-weight: 700;
+						line-height: 27px;
+					}
+
+					img {
+						display: inline-block;
+						vertical-align: middle;
+						margin-right: 22px;
+						margin-left: 11px;
+					}
 				}
 			}
 
@@ -221,6 +229,20 @@ body {
 				}
 			}
 
+			.myBtn_multi {
+				text-align: center;
+				left: 70px;
+				padding: 5px;
+				width: 55px;
+				margin-left: 20px;
+				border: 1px solid white;
+				display: block;
+				color: white;
+				cursor: pointer;
+				margin-bottom: 20px;
+			}
+
+
 			#trabajo-y-seguridad {
 				margin-top: 147px;
 
@@ -245,12 +267,77 @@ body {
 							display: inline-block;
 						}
 					}
-
+					.modal {
+						background-color: $theme-red;
+					}
 					p {
 						&.points {
+							padding-top: 10px;
 							width: 60%;
 							float: left;
 							text-align: left;
+						}
+					}
+				}
+				article {
+					div {
+						&.modal {
+							display: none;
+							position: fixed;
+							z-index: 3;
+							padding: 10%;
+							left: 0;
+							top: 0;
+							width: 100%;
+							height: 100%;
+							overflow: auto;
+							color: white;
+							border: none!important;
+
+							.modal-content {
+								margin: auto;
+								height: auto;
+								padding: 20px;
+								width: 100%;
+								height: auto;
+								border: solid 2px #FFF;
+								background-color: transparent;
+
+								.modal-header {
+									background: transparent;
+									position: inherit;
+									color: #FFF;
+									top: auto;
+									left: auto;
+									width: auto;
+									padding: 15px;
+									z-index: 3;
+									font-size: 24px;
+									font-size: 24px;
+									height: auto;
+									line-height: 30px;
+								}
+
+								.modal-par {
+									font-size: 18px;
+									line-height: 23px;
+									padding: 0;
+									margin: 0;
+									height: auto;
+								}
+							}
+
+							.close {
+								text-align: center;
+								padding: 5px;
+								width: 100px;
+								border: 1px solid white;
+								display: inline-block;
+								color: white;
+								cursor: pointer;
+								font-size: 14px;
+								margin-top: 21px;
+							}
 						}
 					}
 				}
@@ -268,7 +355,16 @@ body {
 						background-color: $theme-blue-2;
 						padding: 19px;
 					}
+					.myBtn_multi {
+						margin: 0;
+						margin-top: 15px;
+						margin-bottom: 0;
+					}
 					div {
+						&.modal {
+							background-color: $theme-blue;
+						}
+
 						img {
 							display: inline-block;
 							vertical-align: middle;
@@ -282,6 +378,74 @@ body {
 						}
 					}
 				}
+				article {
+					div {
+						&.modal {
+							display: none;
+							position: fixed;
+							z-index: 3;
+							padding: 10%;
+							left: 0;
+							top: 0;
+							width: 100%;
+							height: 100%;
+							overflow: auto;
+							color: white;
+							border: none!important;
+
+							.modal-content {
+								margin: auto;
+								height: auto;
+								padding: 20px;
+								width: 100%;
+								height: auto;
+								border: solid 2px #FFF;
+								background-color: transparent;
+
+								.modal-header {
+									background: transparent;
+									position: inherit;
+									color: #FFF;
+									top: auto;
+									left: auto;
+									width: auto;
+									padding: 15px;
+									z-index: 3;
+									font-size: 24px;
+									font-size: 24px;
+									height: auto;
+									line-height: 30px;
+								}
+
+								.modal-par {
+									font-size: 18px;
+									line-height: 23px;
+									padding: 0;
+									margin: 0;
+									width: 100%;
+									height: auto;
+
+									a {
+										color: black;
+										font-weight: bold;
+									}
+								}
+							}
+
+							.close {
+								text-align: center;
+								padding: 5px;
+								width: 100px;
+								border: 1px solid white;
+								display: inline-block;
+								color: white;
+								cursor: pointer;
+								font-size: 14px;
+								margin-top: 21px;
+							}
+						}
+					}
+				}
 			}
 
 			#derechos-laborales {
@@ -290,10 +454,79 @@ body {
 				article {
 					background-color: $theme-pink;
 
+					div {
+						&.modal {
+							background-color: $theme-pink;
+						}
+					}
+
 					p {
 						background-color: $theme-pink-2;
 						padding: 30px;
 						margin: 15px 0px 15px 0px;
+					}
+				}
+				article {
+					div {
+						&.modal {
+							display: none;
+							position: fixed;
+							z-index: 3;
+							padding: 10%;
+							left: 0;
+							top: 0;
+							width: 100%;
+							height: 100%;
+							overflow: auto;
+							color: white;
+							border: none!important;
+
+							.modal-content {
+								margin: auto;
+								height: auto;
+								padding: 20px;
+								width: 100%;
+								height: auto;
+								border: solid 2px #FFF;
+								background-color: transparent;
+
+								.modal-header {
+									background: transparent;
+									position: inherit;
+									color: #FFF;
+									top: auto;
+									left: auto;
+									width: auto;
+									padding: 15px;
+									z-index: 3;
+									font-size: 24px;
+									font-size: 24px;
+									height: auto;
+									line-height: 30px;
+								}
+
+								.modal-par {
+									font-size: 18px;
+									line-height: 23px;
+									padding: 0;
+									margin: 0;
+									background-color: transparent;
+									height: auto;
+								}
+							}
+
+							.close {
+								text-align: center;
+								padding: 5px;
+								width: 100px;
+								border: 1px solid white;
+								display: inline-block;
+								color: white;
+								cursor: pointer;
+								font-size: 14px;
+								margin-top: 21px;
+							}
+						}
 					}
 				}
 			}
@@ -316,6 +549,9 @@ body {
 
 		@media (min-width: $breakpoint-desktop) {
 			section {
+				.myBtn_multi {
+					margin-bottom: 0;
+				}
 				div {
 					display: inline-block;
 					vertical-align: top;
@@ -325,6 +561,14 @@ body {
 						font-size: 16px;
 						line-height: 23px;
 						text-align: left;
+					}
+				}
+
+				p {
+					&.video-text {
+						margin: 0 auto 4px;
+						font-size: 21px;
+						line-height: 33px;
 					}
 				}
 
@@ -398,7 +642,7 @@ body {
 									margin-top: -77px;
 
 									&:last-child {
-										margin: -87px 0 0 0;
+										margin: -118px 0 0 0;
 									}
 								}
 							}
@@ -421,6 +665,12 @@ body {
 								text-align: left;
 								margin: 20px;
 							}
+
+							&.four-img {
+								div {
+									margin: 0;
+								}
+							}
 						}
 					}
 				}
@@ -440,9 +690,11 @@ body {
 						p {
 							display: inline-block;
 							width: 312px;
-							height: 170px;
+							height: auto;
 							text-align: left;
 							margin: 0;
+							vertical-align: middle;
+							padding-right: 0;
 						}
 
 						div {
@@ -452,29 +704,46 @@ body {
 							padding: 30px 0px;
 							height: 170px;
 							float: right;
+
+							img {
+								height: 100%;
+								vertical-align: middle;
+							}
 						}
 					}
 				}
 
 				#derechos-laborales {
+					.myBtn_multi {
+						margin: 0;
+					}
 					article {
 						height: 250px;
 						padding: 0;
 
+						&.last {
+							height: 295px;
+
+							img {
+								padding: 43px;
+							}
+						}
+
 						div {
 							&:first-child {
-								width: 60%;
+								width: 68%;
+								margin-left: 20px;
 							}
 
-							width: 35%;
-							height: 250px;
+							width: 29%;
+							height: 100%;
 
 							title {
 								padding: 26px;
 							}
 
 							p {
-								margin: 15px 0;
+								margin: 0 0 15px 0;
 								font-size: 16px;
 
 								&:last-child {
@@ -483,14 +752,11 @@ body {
 							}
 
 							img {
-								padding: 32px 0;
+								padding: 25px;
+								height: 100%;
 							}
 						}
 					}
-
-
-
-
 				}
 
 				#institucional {
@@ -498,24 +764,24 @@ body {
 						text-align: center;
 						margin: 20px;
 					}
-				}
-				h1 {
-					font-size: 32px;
-				}
-				h2 {
-					font-size: 24px;
-					line-height: 33px;
-					margin-top: 221px;
-					margin-bottom: 146px;
-				}
-				.logo {
-					width: 518px;
-				}
-				p.first {
-					width: 644px;
-					margin: 0 auto 76px;
-					font-size: 24px;
-					line-height: 33px;
+					h1 {
+						font-size: 32px;
+					}
+					h2 {
+						font-size: 24px;
+						line-height: 33px;
+						margin-top: 221px;
+						margin-bottom: 146px;
+					}
+					.logo {
+						width: 518px;
+					}
+					p.first {
+						width: 644px;
+						margin: 0 auto 76px;
+						font-size: 24px;
+						line-height: 33px;
+					}
 				}
 			}
 		}
