@@ -152,6 +152,10 @@ body {
 					width: 260px;
 					margin: 25px auto;
 					margin-bottom: 80px;
+					
+					@media (min-width: $breakpoint-desktop) {
+						min-height: 6em;
+					}
 				}
 
 				article {
@@ -590,6 +594,7 @@ body {
 						margin: 0px 10px 0px 10px;
 						width: 30%;
 						display: inline-block;
+						vertical-align: bottom;
 
 						div {
 							img{
