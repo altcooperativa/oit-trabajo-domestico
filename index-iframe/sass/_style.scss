@@ -25,14 +25,13 @@ body {
 		}
 	}
 
-
 	* {
 		font-family: Noto Sans;
 		font-style: normal;
 	}
 
 	title {
-		display:block;
+		display: block;
 	}
 
 	main {
@@ -181,7 +180,6 @@ body {
 					}
 				}
 
-
 				.tri-grey {
 					padding: 15px;
 					margin: 0 auto;
@@ -216,7 +214,7 @@ body {
 			article {
 				border: none;
 				margin: 20px auto 20px;
-				color: #FFF;
+				color: #fff;
 				font-size: 14px;
 				font-weight: 400;
 				line-height: 19px;
@@ -248,7 +246,6 @@ body {
 				margin-bottom: 20px;
 			}
 
-
 			#trabajo-y-seguridad {
 				margin-top: 147px;
 
@@ -258,7 +255,7 @@ body {
 
 					div {
 						background-color: $theme-red-2;
-						border: solid 2px #FFF;
+						border: solid 2px #fff;
 						padding: 15px;
 
 						&.first {
@@ -298,7 +295,7 @@ body {
 							height: 100%;
 							overflow: auto;
 							color: white;
-							border: none!important;
+							border: none !important;
 
 							.modal-content {
 								margin: auto;
@@ -306,13 +303,13 @@ body {
 								padding: 20px;
 								width: 100%;
 								height: auto;
-								border: solid 2px #FFF;
+								border: solid 2px #fff;
 								background-color: transparent;
 
 								.modal-header {
 									background: transparent;
 									position: inherit;
-									color: #FFF;
+									color: #fff;
 									top: auto;
 									left: auto;
 									width: auto;
@@ -397,7 +394,7 @@ body {
 							height: 100%;
 							overflow: auto;
 							color: white;
-							border: none!important;
+							border: none !important;
 
 							.modal-content {
 								margin: auto;
@@ -405,13 +402,13 @@ body {
 								padding: 20px;
 								width: 100%;
 								height: auto;
-								border: solid 2px #FFF;
+								border: solid 2px #fff;
 								background-color: transparent;
 
 								.modal-header {
 									background: transparent;
 									position: inherit;
-									color: #FFF;
+									color: #fff;
 									top: auto;
 									left: auto;
 									width: auto;
@@ -485,7 +482,7 @@ body {
 							height: 100%;
 							overflow: auto;
 							color: white;
-							border: none!important;
+							border: none !important;
 
 							.modal-content {
 								margin: auto;
@@ -493,13 +490,13 @@ body {
 								padding: 20px;
 								width: 100%;
 								height: auto;
-								border: solid 2px #FFF;
+								border: solid 2px #fff;
 								background-color: transparent;
 
 								.modal-header {
 									background: transparent;
 									position: inherit;
-									color: #FFF;
+									color: #fff;
 									top: auto;
 									left: auto;
 									width: auto;
@@ -549,9 +546,7 @@ body {
 					margin: 27px auto 141px;
 				}
 			}
-
 		}
-
 
 		@media (min-width: $breakpoint-desktop) {
 			section {
@@ -582,7 +577,7 @@ body {
 					font-size: 32px;
 				}
 
-				iframe{
+				iframe {
 					vertical-align: middle;
 					display: inline-block;
 					width: 477px;
@@ -599,7 +594,7 @@ body {
 						vertical-align: bottom;
 
 						div {
-							img{
+							img {
 								margin-top: -4px;
 								padding: 0;
 							}
@@ -625,8 +620,7 @@ body {
 							&.modal {
 								padding: 38px;
 								.modal-content {
-									height: 91%;
-									.modal-header{
+									.modal-header {
 										margin-bottom: 35px;
 									}
 								}
@@ -702,8 +696,7 @@ body {
 							&.modal {
 								padding: 38px;
 								.modal-content {
-									height: 91%;
-									.modal-header{
+									.modal-header {
 										margin-bottom: 35px;
 									}
 								}
@@ -754,8 +747,7 @@ body {
 							&.modal {
 								padding: 38px;
 								.modal-content {
-									height: 91%;
-									.modal-header{
+									.modal-header {
 										margin-bottom: 35px;
 									}
 								}
